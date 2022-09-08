@@ -12,12 +12,14 @@
 // 23432 -> да
 
 
-Console.Write("Введите пятизначное число: ");
+
+Console.Write("Введите число: ");
 string number = Console.ReadLine();
 
-void CheckN(string number)
+void CheckingN(string number)
 {
-  if (number[0]==number[4] && number[1]==number[3]){
+  if (number[0]==number[4] && number[1]==number[3])
+  {
     Console.WriteLine($"Ваше число: {number} - палиндром.");
   }
   else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
@@ -25,10 +27,9 @@ void CheckN(string number)
 
 if (number.Length == 5)
 {
-  CheckN(number);
+  CheckingN(number);
 }
 else Console.WriteLine("Ошибка ввода");
-
 
 
 //End
