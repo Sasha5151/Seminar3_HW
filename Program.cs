@@ -12,7 +12,7 @@
 // 23432 -> да
 
 
-Console.Write("Введите число: ");
+Console.Write("Введите пятизначное число: ");
 string number = Console.ReadLine();
 
 void CheckN(string number)
