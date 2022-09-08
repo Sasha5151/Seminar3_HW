@@ -27,7 +27,7 @@ if (number.Length == 5)
 {
   CheckN(number);
 }
-else Console.WriteLine($"Введи правильное число");
+else Console.WriteLine("Ошибка ввода");
 
 
 
