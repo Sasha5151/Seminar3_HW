@@ -58,16 +58,18 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-int Prompt(string message)
-{
-    System.Console.Write(message);
-    string value = Console.ReadLine();
-    return Convert.ToInt32(value);
-}
+// int Prompt(string message)
+// {
+//     System.Console.Write(message);
+//     string value = Console.ReadLine();
+//     return Convert.ToInt32(value);
+// }
 
-int N = Prompt("Введите число :");
-for (int count = 1 ; count <= N ; count++)
-{
-    int result = count*count*count;
-    System.Console.Write($"{result} , ");
-}
+// int N = Prompt("Введите число :");
+// for (int count = 1 ; count <= N ; count++)
+// {
+//     int result = count*count*count;
+//     System.Console.Write($"{result} , ");
+// }
+
+//End
