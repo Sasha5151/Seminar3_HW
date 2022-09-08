@@ -11,23 +11,6 @@
 
 // 23432 -> да
 
-// int Prompt(string message)
-// {
-//     System.Console.Write(message);
-//     string value = Console.ReadLine();
-//     return Convert.ToInt32 (value);
-// }
-
-// string N = Prompt ("Введите число : ");
-// string S = N.ToString();
-// char[] ar = S.ToCharArray();
-// Array.Reverse(ar);
-// S = new String(ar);
-// N = Convert.ToInt32(S);
-// if (S == N )
-//     {
-//     System.Console.WriteLine($"Число {N} являеться палиндромом");
-//     }
 
 
 
@@ -74,4 +57,11 @@
 
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
+
+int Prompt(string message)
+{
+    System.Console.Write(message);
+    string value = Console.ReadLine();
+    return Convert.ToInt32(value);
+}
 
