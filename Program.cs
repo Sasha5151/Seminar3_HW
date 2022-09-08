@@ -65,3 +65,9 @@ int Prompt(string message)
     return Convert.ToInt32(value);
 }
 
+int N = Prompt("Введите число :");
+for (int count = 1 ; count <= N ; count++)
+{
+    int result = count*count*count;
+    System.Console.Write($"{result} , ");
+}
