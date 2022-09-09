@@ -13,23 +13,56 @@
 
 
 
-Console.Write("Введите число: ");
-string number = Console.ReadLine();
+// Console.Write("Введите пятизначное число: ");
+// string number = Console.ReadLine();
 
-void CheckingN(string number)
+// void CheckingN(string number)
+// {
+//   if (number[0]==number[4] && number[1]==number[3])
+//   {
+//     Console.WriteLine($"Ваше число: {number} - палиндром.");
+//   }
+//   else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
+// }
+
+// if (number.Length == 5)
+// {
+//   CheckingN(number);
+// }
+// else Console.WriteLine("Ошибка ввода");
+
+//End
+
+//простое решение этой задачи 
+
+int Prompt(string message)
 {
-  if (number[0]==number[4] && number[1]==number[3])
+    System.Console.Write(message);
+    string value = Console.ReadLine();
+    return Convert.ToInt32(value);
+}
+int N = Prompt("Введите пятизначное число :");
+if (N > 99999 || N < 10000 )
+{
+  Console.WriteLine("Ошибка ввода");
+}
+else
+{
+  int N5 = N%10 ; 
+  N = N/10 ;
+  int N4 = N%10 ; 
+  N = N/10 ;
+  int N3 = N%10 ; 
+  N = N/10 ;
+  int N2 = N%10 ; 
+  N = N/10 ;
+  int N1 = N%10 ; 
+   if  (N5 == N1 && N4 == N2 )
   {
-    Console.WriteLine($"Ваше число: {number} - палиндром.");
+    Console.WriteLine("Ваше число: - палиндром.");
   }
-  else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
+  else Console.WriteLine("Ваше число: - НЕ палиндром.");
 }
-
-if (number.Length == 5)
-{
-  CheckingN(number);
-}
-else Console.WriteLine("Ошибка ввода");
 
 
 //End
